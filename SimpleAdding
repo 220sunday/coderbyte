@@ -1,0 +1,7 @@
+def SimpleAdding(num)
+
+  # code goes here
+  num = (2..num).inject(1, :+)
+  return num 
+         
+end
