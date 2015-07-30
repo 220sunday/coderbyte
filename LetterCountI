@@ -1,0 +1,6 @@
+def LetterCountI(str)
+
+  # code goes here
+  return str.scan(/\w+/).max_by{ |w| w.chars.group_by(&:to_s).values.map(&:size).max }
+         
+end
